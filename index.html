@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Jellipsis - Demo</title>
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  <link rel="stylesheet" href="style.css"/>
+      <style>
+      body {
+  padding: 5%;
+}
+
+
+
+.box {
+  /*height: 4.5em;*/
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  
+  
+}
+.box--responsive {
+  width: 30%;
+}
+    </style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+</head>
+
+<body translate="no" >
+<h2>JQuery.fewlines</h2>
+<p>JQuery.fewlines - is a light weight Jquery plugin to trim the text to specified number of rows. </p>
+  
+  <h2>Usage</h2>
+  <p>It is easy to use</p>
+  <pre>
+    <code>
+      $('#demo1').fewlines({ lines:2 }); //Show two lines of text with show and hide actions.
+
+      $('#demo2').fewlines({ lines:2, noAction: true }); //Show two lines only, no show/hide action.
+
+      $('#demo3').fewlines({ lines:2, responsive: true }); //Show two lines with screen resize support.
+
+      $('#demo4').fewlines({ lines:2, showOnMouseOver:true }); //Show two lines with mouse hover support.
+
+      </code>
+    </pre>
+
+
+<h2>Demo</h2>
+
+<div id="demo1" class="box box--responsive" title="demo1 - Show two lines of text with show and hide actions">
+#Demo1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+</div>
+
+<div id="demo2" class="box box--responsive" title="demo1 - Show two lines only, no show/hide action">
+#Demo2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+</div>
+
+<div id="demo3" class="box box--responsive" title="demo1 - Show two lines with screen resize support">
+#Demo3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+</div>
+
+<div id="demo4" class="box box--responsive" title="demo1- Show two lines with mouse hover support">
+#Demo4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+</div>
+ 
+<p style=" margin-bottom:30px">&nbsp;</p>
+ 
+  <script src='JQuery.fewlines.min.js'></script>
+  
+    <script>
+   
+$(document).ready(function(){
+
+$('#demo1').fewlines({ lines:2 });
+$('#demo2').fewlines({ lines: 2, noAction: true });
+$('#demo3').fewlines({ lines: 2, responsive: true });
+$('#demo4').fewlines({ responsive: true, lines: 2, showOnMouseOver: true });
+
+});
+
+  //# sourceURL=pen.js
+  </script>
+
+  
+  
+
+</body>
+</html>
